@@ -2,34 +2,38 @@
   max-width: 700px;   /* sayfa ortasında dar alan */
   margin: 0 auto;     /* ortala */
   padding: 20px;
+  font-family: Arial, sans-serif;
 }
 
 .product-title {
-  font-size: 28px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.product-price {
+  font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.product-price {
-  font-size: 22px;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
 .product-desc {
-  color: #555;
+  color: #444;
   margin-bottom: 20px;
+  line-height: 1.5;
 }
 
 .options {
   display: flex;
   justify-content: space-between; /* Boyut ve Hamur yan yana */
   gap: 40px;                      /* aralarına boşluk bırak */
-  flex-wrap: wrap;                /* küçük ekranda alta geçsin */
+  flex-wrap: wrap;  
+  margin-bottom: 20px;              /* küçük ekranda alta geçsin */
 }
 
 .option-group {
   flex: 1;
+  margin-right: 20px;
 }
 
 .option-label {
@@ -49,4 +53,14 @@
   display: flex;
   align-items: center;
   gap: 5px; /* Checkbox ile label arası boşluk */
+}
+
+select {
+  padding: 6px;
+  border: 1px solid #ccc;
+  width: 180px;
+}
+
+.additional-group {
+  margin: 20px 0 10px;
 }
