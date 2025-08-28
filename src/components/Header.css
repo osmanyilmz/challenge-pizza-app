@@ -1,7 +1,7 @@
 .header {
-  background-color: #c62828; /* Kırmızı arka plan */
+  background-color: #CE2829;
   color: white;
-  padding: 20px 0;
+  padding: 40px 0;
 }
 
 .header-container {
@@ -38,6 +38,3 @@
 .nav .highlight {
   font-weight: bold;
 }
-
-
-

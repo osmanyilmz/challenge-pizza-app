@@ -1,6 +1,6 @@
 .product-container {
-  max-width: 700px;   /* sayfa ortasında dar alan */
-  margin: 0 auto;     /* ortala */
+  max-width: 700px;   
+  margin: 0 auto;     
   padding: 20px;
   font-family: Arial, sans-serif;
 }
@@ -14,7 +14,7 @@
 .product-price {
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .product-desc {
@@ -25,10 +25,10 @@
 
 .options {
   display: flex;
-  justify-content: space-between; /* Boyut ve Hamur yan yana */
-  gap: 40px;                      /* aralarına boşluk bırak */
+  justify-content: space-between; 
+  gap: 40px;                      
   flex-wrap: wrap;  
-  margin-bottom: 20px;              /* küçük ekranda alta geçsin */
+  margin-bottom: 20px;              
 }
 
 .option-group {
@@ -45,14 +45,14 @@
 //checkbox csss
 .checkbox-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 sütun */
-  gap: 10px; /* Sütunlar arası boşluk */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px; 
 }
 
 .checkbox-item {
   display: flex;
   align-items: center;
-  gap: 5px; /* Checkbox ile label arası boşluk */
+  gap: 5px; 
 }
 
 select {

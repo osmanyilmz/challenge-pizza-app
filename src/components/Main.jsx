@@ -1,7 +1,8 @@
 import "./Main.css";
 import { useState } from "react";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
-export default function Header() {
+export default function Main() {
   const [size, setSize] = useState("");
   const [dough, setDough] = useState("");
   const [extras, setExtras] = useState([]);
@@ -113,7 +114,7 @@ export default function Header() {
       <div className="checkbox-grid">
         {options.map((option, index) => (
           <label key={index} className="checkbox-item">
-            <input type="checkbox" />
+            <input type="checkbox" onChange={() => handleExtraChange(option)} />
             {option}
           </label>
         ))}
@@ -143,8 +144,9 @@ export default function Header() {
         <p>Seçimler: {extras.length * extraPrice}₺</p>
         <p className="total">Toplam: {totalPrice.toFixed(2)}₺</p>
       </div>
-
-      <button className="order-button">SİPARİŞ VER</button>
+      <Link to="/success">
+        <button className="order-button">SİPARİŞ VER</button>
+      </Link>
     </div>
   );
 }
