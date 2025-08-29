@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;600;700&display=swap" rel="stylesheet');
 
 .home {
-  height: 100vh;
+  height: 85vh;
   width: 100%;
   background: url("../../images/iteration-1-images/home-banner.png") no-repeat center center;
   color: white;
@@ -19,7 +19,7 @@
 }
 
 .home h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
   margin-bottom: 20px;
   font-family: 'Roboto Condensed', sans-serif;
@@ -32,8 +32,8 @@
   color: black;
   border: none;
   border-radius: 25px;
-  padding: 12px 30px;
-  font-size: 1rem;
+  padding: 13px 40px;
+  font-size: 0.7rem;
   cursor: pointer;
   transition: 0.3s;
 }

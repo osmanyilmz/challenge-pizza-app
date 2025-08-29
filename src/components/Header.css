@@ -17,24 +17,6 @@
   margin-bottom: 10px;
 }
 
-.nav ul {
-  list-style: none;
-  display: flex;
-  gap: 15px;
-  padding: 0;
-  margin: 0;
-}
-
-.nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.nav a:hover {
-  text-decoration: underline;
-}
-
-.nav .highlight {
-  font-weight: bold;
+.logo img {
+  width: 85%;
 }
