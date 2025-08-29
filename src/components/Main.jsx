@@ -131,20 +131,28 @@ export default function Main() {
         />
       </div>
       <div className="actions-row">
-        <div className="quantity-box">
-          <button onClick={() => setQuantity(quantity > 1 ? quantity - 1 : 1)}>
-            -
-          </button>
-          <span>{quantity}</span>
-          <button onClick={() => setQuantity(quantity + 1)}>+</button>
-        </div>
-
         <div className="order-summary">
           <h3>Sipariş Toplamı</h3>
           <p>Seçimler: {extras.length * extraPrice}₺</p>
           <p className="total">Toplam: {totalPrice.toFixed(2)}₺</p>
 
-          <Link to="/success">
+          <Link to="/success" className="desktop-order-btn">
+            <button className="order-button">SİPARİŞ VER</button>
+          </Link>
+        </div>
+
+        <div className="quantity-button-row">
+          <div className="quantity-box">
+            <button
+              onClick={() => setQuantity(quantity > 1 ? quantity - 1 : 1)}
+            >
+              -
+            </button>
+            <span>{quantity}</span>
+            <button onClick={() => setQuantity(quantity + 1)}>+</button>
+          </div>
+
+          <Link to="/success" className="mobile-order-btn">
             <button className="order-button">SİPARİŞ VER</button>
           </Link>
         </div>

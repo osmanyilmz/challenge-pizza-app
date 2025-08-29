@@ -42,3 +42,9 @@
   background-color: #ffb300;
 }
 
+@media (max-width: 600px) {
+  .home h1 {
+    white-space: pre-line; /* <br> çalışsın */
+    word-spacing: 100vw;
+  }
+}

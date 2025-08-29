@@ -21,3 +21,14 @@ h1 {
     justify-content: center; 
     align-items: center;
 }
+
+@media (max-width: 600px) {
+ .success {
+    height: 80vh;
+  }
+
+  h1 {
+    white-space: pre-line; /* <br> çalışsın */
+    word-spacing: 100vw;
+  }
+}
