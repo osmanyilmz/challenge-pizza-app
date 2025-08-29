@@ -129,6 +129,7 @@ export default function Main() {
           onChange={(e) => setNote(e.target.value)}
           className="note-input"
         />
+        <div className="divider"></div>
       </div>
       <div className="actions-row">
         <div className="order-summary">
