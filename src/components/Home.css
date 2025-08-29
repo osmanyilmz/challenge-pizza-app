@@ -42,6 +42,13 @@
   background-color: #ffb300;
 }
 
+.home-title {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: #facc15;
+  font-family: 'Satisfy', sans-serif;
+}
+
 @media (max-width: 600px) {
   .home h1 {
     white-space: pre-line; /* <br> çalışsın */

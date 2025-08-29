@@ -5,6 +5,7 @@ export default function Home() {
   return (
     <section className="home">
       <div className="home-content">
+        <h2 className="home-title">fırsatı kaçırma</h2>
         <h1>
           KOD ACIKTIRIR <br /> PİZZA, DOYURUR
         </h1>

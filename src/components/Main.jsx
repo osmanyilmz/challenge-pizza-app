@@ -137,7 +137,21 @@ export default function Main() {
           <p>Seçimler: {extras.length * extraPrice}₺</p>
           <p className="total">Toplam: {totalPrice.toFixed(2)}₺</p>
 
-          <Link to="/success" className="desktop-order-btn">
+          <Link
+            to={{
+              pathname: "/success",
+              state: {
+                size,
+                dough,
+                extras,
+                note,
+                quantity,
+                totalPrice,
+                extraPrice,
+              },
+            }}
+            className="desktop-order-btn"
+          >
             <button className="order-button">SİPARİŞ VER</button>
           </Link>
         </div>
@@ -153,7 +167,21 @@ export default function Main() {
             <button onClick={() => setQuantity(quantity + 1)}>+</button>
           </div>
 
-          <Link to="/success" className="mobile-order-btn">
+          <Link
+            to={{
+              pathname: "/success",
+              state: {
+                size,
+                dough,
+                extras,
+                note,
+                quantity,
+                totalPrice,
+                extraPrice,
+              },
+            }}
+            className="mobile-order-btn"
+          >
             <button className="order-button">SİPARİŞ VER</button>
           </Link>
         </div>

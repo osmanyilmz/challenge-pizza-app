@@ -4,6 +4,7 @@ import Main from "./components/Main";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Success from "./components/Success";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/secenekler" component={Main} />
         <Route path="/success" component={Success} />
       </Switch>
+      <Footer />
     </Router>
   );
 }
