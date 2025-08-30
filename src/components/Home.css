@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;600;700&display=swap" rel="stylesheet');
 
+.main-class {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #FAF7F2;
+}
+
 .home {
   height: 85vh;
   width: 100%;
@@ -28,7 +36,7 @@
 }
 
 .cta-btn {
-  background-color: #ffca28; 
+  background-color: #FDC913; 
   color: black;
   border: none;
   border-radius: 25px;
@@ -39,19 +47,19 @@
 }
 
 .cta-btn:hover {
-  background-color: #ffb300;
+  background-color: #FDC913;
 }
 
 .home-title {
   font-size: 3rem;
   margin-bottom: 0.5rem;
-  color: #facc15;
+  color: #FDC913;
   font-family: 'Satisfy', sans-serif;
 }
 
 @media (max-width: 600px) {
   .home h1 {
-    white-space: pre-line; /* <br> çalışsın */
+    white-space: pre-line; 
     word-spacing: 100vw;
   }
 }
