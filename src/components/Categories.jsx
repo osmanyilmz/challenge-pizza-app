@@ -1,5 +1,7 @@
 import "./Categories.css";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+
 import ramenIcon from "../../images/iteration-2-images/icons/1.svg";
 import pizzaIcon from "../../images/iteration-2-images/icons/2.svg";
 import burgerIcon from "../../images/iteration-2-images/icons/3.svg";
@@ -8,6 +10,9 @@ import fastfoodIcon from "../../images/iteration-2-images/icons/5.svg";
 import drinkIcon from "../../images/iteration-2-images/icons/6.svg";
 
 export default function Categories() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const navigate = useNavigate();
 
   const items = [
