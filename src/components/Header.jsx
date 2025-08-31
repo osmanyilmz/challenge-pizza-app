@@ -5,7 +5,6 @@ export default function Header() {
   return (
     <header className="header">
       <div className="header-container">
-        {/* Logo */}
         <div className="logo">
           <img src={logo} alt="Teknolojik Yemekler Logo" />
         </div>

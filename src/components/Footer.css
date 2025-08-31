@@ -1,5 +1,5 @@
 .footer {
-  background-color: #1A1A1A;
+  background-color: #292929;
   color: #FFFFFF;
   padding: 40px 20px;
   font-family: 'Segoe UI', sans-serif;
@@ -22,7 +22,7 @@
 .footer-section h3 {
   font-size: 1.2rem;
   margin-bottom: 15px;
-  color: #facc15;
+  color: #FDC913;
 }
 
 .contact-info p,
@@ -92,7 +92,6 @@
   transition: transform 0.3s ease;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;

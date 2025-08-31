@@ -14,7 +14,6 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* Contact Info */}
         <div className="footer-section contact-info">
           <h3>İletişim</h3>
           <p>
@@ -33,7 +32,6 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Menu Highlights */}
         <div className="footer-section menu-highlights">
           <h3>Sıcaklık Menüler</h3>
           <ul>
@@ -46,7 +44,6 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Instagram Section */}
         <div className="footer-section instagram-gallery">
           <h3>Instagram</h3>
           <div className="insta-grid">
@@ -60,7 +57,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Copyright */}
       <div className="footer-bottom">
         <span className="copyright">© 2025 Teknolojik Yemekler</span>
         <i className="fab fa-twitter social-icon"></i>

@@ -1,7 +1,7 @@
 .categories {
   width: 100%;
   padding: 2rem 0;
-  background: #fff;
+  background: #FAF7F2;
   font-family: 'Barlow', sans-serif;
 
 }
@@ -14,7 +14,6 @@
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
-
 }
 
 .category-item {
@@ -23,27 +22,35 @@
   align-items: center;
   cursor: pointer;
   transition: transform 0.2s;
-  text-align: left; 
   gap: 0.5rem; 
   border: 1px solid #333;
   border-radius:3rem;
-  padding:0px 15px;
+  padding:4px 15px;
+  background: #FFFFFF;
 }
 
 .category-item img {
-  width: 50x;
-  height: 50px;
+  width: 40x;
+  height: 40px;
   margin-bottom: 0;
 }
 
 .category-item span {
   font-size: 1rem;
   font-weight: 500;
-  color: #5F5F5F;
 }
 
 .category-item:hover {
   transform: scale(1.1);
   background-color: #5F5F5F;
   color: white;
+}
+
+
+@media (max-width: 768px) {
+.category-item {
+  display:flex;
+  text-align: start; 
+}
+
 }

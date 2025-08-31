@@ -1,9 +1,12 @@
 import "./PopularMenus.css";
+import { useNavigate } from "react-router-dom";
 import pizza1 from "../../images/iteration-2-images/pictures/food-1.png";
 import pizza2 from "../../images/iteration-2-images/pictures/food-2.png";
 import burger from "../../images/iteration-2-images/pictures/food-3.png";
 
 export default function PopularMenus() {
+  const navigate = useNavigate();
+
   const menus = [
     {
       img: pizza1,
@@ -28,13 +31,21 @@ export default function PopularMenus() {
     },
   ];
 
+  const handleClick = (menuName) => {
+    navigate("/secenekler", { state: { menuName } });
+  };
+
   return (
     <section className="popular-menus">
       <h2>en çok paketlenen menüler</h2>
       <p>Acıktıran Kodlara Doyuran Lezzetler</p>
       <div className="menu-grid">
         {menus.map((menu, idx) => (
-          <div key={idx} className="menu-card">
+          <div
+            key={idx}
+            className="menu-card"
+            onClick={() => handleClick(menu.name)}
+          >
             <img src={menu.img} alt={menu.name} />
             <h3>{menu.name}</h3>
             <p className="rating">
